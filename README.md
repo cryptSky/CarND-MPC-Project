@@ -2,7 +2,7 @@
 Udacity Self-Driving Car Nanodegree Term 2, Project 5
 
 ### Results
-See video of the results from my implementation [here](MPC_vid.mov). 
+See video of the results from my implementation [here](https://www.youtube.com/watch?v=O79eCmBpj64). 
 
 ## Discussion/Reflection
 ### The Model
@@ -40,7 +40,7 @@ The first variable back from the `MPC.Solve()` function is delta. This value nee
 We can also use the remaining variables from `MPC.Solve()`, which I purposefully set as the output x and y coordinates from the MPC model, to draw a line in the simulator showing the car's current predicted future path. This is drawn in green in the simulator, and shows how different the model's current expected path is compared to what a path directly through the waypoints would be. Note that I started with the beginning state values from before the solve function so that the line would begin near the vehicle.
 
 #### Timesteps (N) and Timestep Duration (dt)
-After experimentation, I set N=10 and dt=0.1 which performs the well in my case.
+After experimentation, I set N=10 and dt=0.1 which performs the well in my case. Initially I tried N=25 and dt=0.5, which was performing bad(slow reaction and timespan was to high in my opinion)
 
 
 ---
